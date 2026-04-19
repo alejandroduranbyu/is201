@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMILEY-FACE EXHIBITION</title>
+    <link rel="stylesheet" href="../../style/style.css">
+    <style>
+        .scratch-section {
+            width: 90%;
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .scratch-section h2 {
+            color: #ffffff;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #444;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        .scratch-section p {
+            color: #aaaaaa;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        ol {
+            color: #cccccc;
+            line-height: 2;
+            padding-left: 24px;
+        }
+
+        ol ul {
+            color: #aaaaaa;
+            margin: 4px 0 4px 20px;
+            list-style-type: disc;
+        }
+
+        .anchor-link {
+            display: inline-block;
+            color: #aaaaaa;
+            text-decoration: none;
+            border: 1px solid #444;
+            padding: 8px 18px;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .anchor-link:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: none;
+        }
+
+        .tableau-wrapper {
+            border: 1px solid #333;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="head">SMILEY-FACE EXHIBITION</h1>
+        <p>Choose your tour!</p>
+        <p>You can come back later!</p>
+    </header>
+
+    <!-- ON-PAGE ANCHOR LINK -->
+    <div style="margin-top: 30px;">
+        <a href="#game-section" class="anchor-link">↓ Jump to the Game</a>
+    </div>
+
+    <!-- NAV --> 
+    <nav>
+    <a href="../../index.html">← Home</a>
+    <a href="../tours/youtube.html">YouTube Tour</a>
+    <a href="../tours/game.html">Game</a>
+    <a href="../tours/resume.html">About the Curator</a>
+    </nav>
+        
+
+    <!-- NESTED LIST -->
+    <div class="scratch-section">
+        <h2>A Taxonomy of Smiles</h2>
+        <p>Not all smiles are created equal. Here is a brief curatorial guide:</p>
+        <ol>
+            <li>The Classic Smile
+                <ul>
+                    <li>Symmetrical, warm, universally recognized</li>
+                    <li>The :) of the real world</li>
+                </ul>
+            </li>
+            <li>The Smirk
+                <ul>
+                    <li>One-sided, knowing, slightly dangerous</li>
+                    <li>Reserved for those who are in on the joke</li>
+                </ul>
+            </li>
+            <li>The Grin
+                <ul>
+                    <li>Wide, toothy, uninhibited</li>
+                    <li>The :D in its natural habitat</li>
+                </ul>
+            </li>
+            <li>The Smiley Face
+                <ul>
+                    <li>Abstracted from humanity entirely</li>
+                    <li>The subject of this very exhibition</li>
+                    <li>Yellow, circular, eternal</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <!-- YOUTUBE EMBED -->
+    <div class="scratch-section">
+        <h2>The Origin Story</h2>
+        <p>The smiley face was invented in 1963 for a corporate insurance company — and never trademarked. Watch how a $45 design became one of the most recognized symbols on earth.</p>
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/P78C_TFeqjU"
+                title="The Smiley Face Was Invented for Corporate America"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- TABLEAU EMBED -->
+    <div class="scratch-section">
+        <h2>The Science of Happiness</h2>
+        <p>The smiley face is a universal symbol of happiness — but which countries are actually the happiest? Explore this interactive World Happiness Dashboard and find out.</p>
+        <div class="tableau-wrapper">
+            <tableau-viz
+                src='https://public.tableau.com/views/WorldHappinessDashboard/Dashboard1'
+                width='800'
+                height='550'
+                toolbar='bottom'>
+            </tableau-viz>
+            <script type='module' src='https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+        </div>
+    </div>
+
+    <!-- GAME ANCHOR TARGET -->
+    <div class="scratch-section" id="game-section">
+        <h2>Play the Game</h2>
+        <p>Think you can handle it? The smiley face awaits.</p>
+        <a href="../tours/game.html" class="anchor-link">→ Enter the Game</a>
+    </div>
+
+</body>
+</html>
